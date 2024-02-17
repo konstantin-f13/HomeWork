@@ -77,13 +77,45 @@ public class OperatorsPriorityMain {
         *
         * */
 
-        a = 5;
-        b = 2;
-        c = 8;
-        d = 7;
-        e = 20;
-        f = 68;
-        g = 22;
+//        a = 5;
+//        b = 2;
+//        c = 8;
+//        d = 7;
+//        e = 20;
+//        f = 68;
+//        g = 22;
+//        result = (a + d > e ? f >= f : g * b >> b++) / --c;
+//        System.out.println("Выражение 2.7 \n" + "Результат вычисления '(5 + 7 > 20 ? 68 >= 68 : 22 * 2 >> 2++)/ --8'= " + result);
+/*Задача 2.7. Код не компилируется, так как в ходе вычислений в соответствии с таблицей приоритности операторов, в определенный момент
+мы приходим к вычислению выражения (68 >= 68), результат которого имеет логический тип. В итоге получаем ошибку:
+java: bad operand types for binary operator '/'
+  first type:  java.lang.Object&java.io.Serializable&java.lang.Comparable<? extends java.lang.Object&java.io.Serializable&java.lang.Comparable<?>>
+  second type: int
+*
+* */
+
+        boolean result2;
+        result2 = 6 - 2 > 3 && 12 * 12 <= 119;
+        System.out.println("Выражение 2.8 \n" + "Результат вычисления '6 - 2 > 3 && 12 * 12 <= 119'= " + result2);
+        /* Полученный результат: false.
+        1. Вначале выполняем умножение, которое являеется оператором с наивысшим в данном выражении приоритетом.
+        * 12 * 12 = 144.
+        2. Далее следует вычитание: 6 - 2 = 4.
+        3. Имеем следующее: 4 > 3 && 144 <= 119;
+        Выполняем операторы сравнения, сначала левое, затем правое (according to the Associativity rule left-to-right)
+        4. Получаем true && false = false.
+        * */
+
+        boolean one = true;
+        boolean two = false;
+        result2 = one && two;
+        System.out.println("Выражение 2.9 \n" + "Результат вычисления 'true && false= " + result2);
+        /* Полученный результат: false. Требуется единственный логический оператор AND.
+        *
+        * */
+
+
+
 
 
 
