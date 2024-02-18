@@ -11,6 +11,6 @@
    - 4.1 класс OddNumbersMain
    - 4.2 класс MediumNumberAmongThreeMain
    - 4.3 класс DivisibilityCheckMain
-   - 4.4 
-   - 4.5
+   - 4.4 класс BytesToKilobytesMain
+   - 4.5 класс LetterOrSymbolMain
    - 4.6
