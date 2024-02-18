@@ -23,10 +23,11 @@ public class MathLibraryPracticeMain {
         System.out.println("Наименьшее целое число, которое >= e = " + Math.ceil(e));
         System.out.println("Наибольшее целое число, которое <= e = " + Math.floor(e));
         System.out.println("Округление в большую сторону до ближайшего целого = " + Math.round(e));
-
-
+        System.out.println("Возвращение ближайшего к первому аргументу значения в направлении указанного 2-го аргумента = " + Math.nextAfter(e, 3));
+        System.out.println("Возвращение ближайшего к аргументу значения в положительном направлении = " + Math.nextUp(e));
+        System.out.println("Возвращение ближайшего к аргументу значения в отрицательном направлении = " + Math.nextDown(e));
+        System.out.println("Возвращение ближайшего целого к аргументу = " + Math.rint(e));
         System.out.println("Возвращение рандомного числа, >=0 и <1: " + Math.random());
-
         System.out.println("Вычисление квадратного корня числа 9 = " + Math.sqrt(9)); //3.0
         System.out.println("Вычисление квадратного корня числа 144 = " + Math.sqrt(144)); //12.0
 
