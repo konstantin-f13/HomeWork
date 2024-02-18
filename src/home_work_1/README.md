@@ -10,7 +10,7 @@
 4. Задача 4
    - 4.1 класс OddNumbersMain
    - 4.2 класс MediumNumberAmongThreeMain
-   - 4.3
-   - 4.4
+   - 4.3 класс DivisibilityCheckMain
+   - 4.4 
    - 4.5
    - 4.6
