@@ -13,4 +13,8 @@
    - 4.3 класс DivisibilityCheckMain
    - 4.4 класс BytesToKilobytesMain
    - 4.5 класс LetterOrSymbolMain
-   - 4.6
+   - 4.6 класс LeapYearCheckMain
+6. Задача 6
+   - 6.1 класс NameInquiryIfElse
+   - 6.2 класс NameInquiryIfElseIf
+   - 6.3 класс NameInquirySwitchS

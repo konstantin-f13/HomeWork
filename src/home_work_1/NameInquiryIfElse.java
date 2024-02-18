@@ -15,8 +15,7 @@ public class NameInquiryIfElse {
         } else {
             if (Objects.equals(name, str2)) {
                 System.out.println("Я тебя так долго ждал");
-            }
-            if (!(Objects.equals(name, str2))) {
+            } else {
                 System.out.println("Добрый день! А вы кто?");
             }
         }
