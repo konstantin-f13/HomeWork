@@ -7,4 +7,10 @@
     - 1.3 класс BitwiseOperationsMain (комментарий), BitwiseOperationsNonIntegral (класс, в котором была совершена попытка провести побитовую операцию с нецелочисленным числом)
 2. Задача 2 - класс OperatorsPriorityMain
 3. Задача 3 - MathLibraryPracticeMain
-4. ...
+4. Задача 4
+   - 4.1 класс OddNumbersMain
+   - 4.2 класс MediumNumberAmongThreeMain
+   - 4.3
+   - 4.4
+   - 4.5
+   - 4.6
