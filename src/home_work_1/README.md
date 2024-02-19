@@ -1,5 +1,4 @@
-# README
-## Описание соответствия классов заданиям
+# Описание соответствия классов заданиям
 
 1. Задача 1
     - 1.1 класс BitwiseOperationsMain
@@ -14,7 +13,12 @@
    - 4.4 класс BytesToKilobytesMain
    - 4.5 класс LetterOrSymbolMain
    - 4.6 класс LeapYearCheckMain
+5. *not solved so far*
 6. Задача 6
    - 6.1 класс NameInquiryIfElse
    - 6.2 класс NameInquiryIfElseIf
-   - 6.3 класс NameInquirySwitchS
+   - 6.3 класс NameInquirySwitch
+7. *not solved so far*
+8. *not solved so far*
+9. *not solved so far*
+10. *not solved so far*
