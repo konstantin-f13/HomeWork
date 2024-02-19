@@ -13,7 +13,7 @@
    - 4.4 класс BytesToKilobytesMain
    - 4.5 класс LetterOrSymbolMain
    - 4.6 класс LeapYearCheckMain
-5. *not solved so far*
+5. Задача 5* - класс SleepInOrNotMain
 6. Задача 6
    - 6.1 класс NameInquiryIfElse
    - 6.2 класс NameInquiryIfElseIf
