@@ -18,7 +18,7 @@
    - 6.1 класс NameInquiryIfElse
    - 6.2 класс NameInquiryIfElseIf
    - 6.3 класс NameInquirySwitch
-7. *not solved so far*
+7. CreatePhoneNumberMain
 8. *not solved so far*
 9. *not solved so far*
 10. *not solved so far*
