@@ -19,6 +19,6 @@
    - 6.2 класс NameInquiryIfElseIf
    - 6.3 класс NameInquirySwitch
 7. Задача 7* CreatePhoneNumberMain
-8. Задача 8** StringToBinaryMain (not solved so far)
+8. Задача 8** StringToBinaryMain
 9. *not solved so far*
 10. *not solved so far*
