@@ -9,8 +9,8 @@ public class LoopsTask1_2 {
 
         String strNum = args[0];
         boolean onlyDigits = strNum.matches("\\d+");
-        boolean nonIntNumber = strNum.matches("\\d++[.]\\d++");
-        boolean notNumber = strNum.matches("\\D++");
+        boolean nonIntNumber = strNum.matches("\\d+[.]\\d+");
+        boolean notNumber = strNum.matches("\\D+");
         long digitsMultiplication = 1;
 
         if (onlyDigits) {
