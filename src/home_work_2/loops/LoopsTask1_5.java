@@ -5,26 +5,16 @@ import java.util.Scanner;
 
 public class LoopsTask1_5 {
     public static void main(String[] args) {
-//        System.out.println("Введите натуральное число");
+        System.out.println("Введите натуральное число");
         Scanner console = new Scanner(System.in);
-//        long input = console.nextLong();
-//        System.out.println(maxDigitOfNaturalNum(input)); // это ОК - потом раскомментировать
-
-//        System.out.println("Вероятность генерации выпадения чётных случайных чисел:");
-//        System.out.println(probabilityGenEvenRandomNumbers());//вызов метода для расчета вероятности выпадения четных случайных чисел
-
-//        System.out.println(sumEvenOddNumbers());//вызов метода для подсчета четных и нечетных цифр введенного числа
-
-//        System.out.println(fibonacciSequence());//вызов метода для вывода элементов ряда Фибоначчи
-
-//        System.out.println(numbersInRangeInStepsOf5());//вызов метода для вывода ряда чисел в диапазоне с шагом
-
+        long input = console.nextLong();
+        System.out.println(maxDigitOfNaturalNum(input));
+        System.out.println("Вероятность генерации выпадения чётных случайных чисел:");
+        System.out.println(probabilityGenEvenRandomNumbers());//вызов метода для расчета вероятности выпадения четных случайных чисел
+        System.out.println(sumEvenOddNumbers());//вызов метода для подсчета четных и нечетных цифр введенного числа
+        System.out.println(fibonacciSequence());//вызов метода для вывода элементов ряда Фибоначчи
+        System.out.println(numbersInRangeInStepsOf5());//вызов метода для вывода ряда чисел в диапазоне с шагом
         System.out.println(numberReversal());
-
-
-
-
-
     }
 
     static String maxDigitOfNaturalNum(long number){

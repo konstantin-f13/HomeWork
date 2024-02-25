@@ -20,7 +20,10 @@
    - 2.1.1.1 ArrayFromConsoleMain
    - 2.1.2 ArraysUtils
    - 2.1.2.1 ArrayRandomMain
-   - 2.2 
+   - 2.2 ArraysIteration
+   - 2.2.1 метод outputToConsole
+   - 2.2.2 метод outputEverySecondElement
+   - 2.2.3 метод outputReversed
    - 2.3* not done
    - 2.4 
    - 2.4.1
