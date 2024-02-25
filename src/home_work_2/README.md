@@ -12,7 +12,7 @@
     - 1.5.4 метод fibonacciSequence
     - 1.5.5 метод NumbersInRangeInStepsOf5
     - 1.5.6 метод numberReversal
-    - 1.6 
+    - 1.6 LoopsTask1_6
 
 2. Задача 2
 3. Задача 3
