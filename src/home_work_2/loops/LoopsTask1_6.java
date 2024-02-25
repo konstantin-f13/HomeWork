@@ -5,14 +5,14 @@ public class LoopsTask1_6 {
 
         for (int i = 1; i <= 10; i++) {
             for (int j = 2; j <= 5 ; j++) {
-                System.out.print(" " + j + " x " + i + " = " + i * j + " |");
+                System.out.print(j + " x " + i + " = " + i * j + "\t  " + "| ");
             }
             System.out.println("\b\b");
         }
 
         int count = 0;
 
-        while (count <= 51) {
+        while (count <= 58) {
             System.out.print("_");
             count++;
         }
@@ -20,7 +20,7 @@ public class LoopsTask1_6 {
 
         for (int i = 1; i <= 10; i++) {
             for (int j = 6; j <= 9 ; j++) {
-                System.out.print(" " + j + " x " + i + " = " + i * j + " |");
+                System.out.print(j + " x " + i + " = " + i * j + "\t  " + "| ");
             }
             System.out.println("\b\b");
         }
