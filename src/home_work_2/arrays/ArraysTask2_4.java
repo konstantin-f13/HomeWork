@@ -7,11 +7,16 @@ public class ArraysTask2_4 {
         int[] array = ArraysUtils.arrayRandom(50,100);
 
         sumEvenPositiveElements(array);
-        System.out.println(maxElWithEvenArrayIndex(array));
+
+        System.out.println(maxElWithEvenArrayIndex(array) + "\n");
+
         elemLessThanAverage(array);
+
         twoMinElements(array);
+
         arrayCompressionByDeletionOfElements(array, 10, 50);//параметры a и b - диапазон данных, подлежащих удалению
 
+        sumOfDigitsOfTheWholeArray(array);
     }
     static void sumEvenPositiveElements(int[] array){
         Random random = new Random();
@@ -33,7 +38,7 @@ public class ArraysTask2_4 {
                 sum += arrayNew[i];
             }
         }
-        System.out.println("\n" + "Сумма чётных положительных элементов= " + sum);
+        System.out.println("\n" + "Сумма чётных положительных элементов= " + sum + "\n");
     }
 
     static int maxElWithEvenArrayIndex(int[] array){
@@ -50,6 +55,7 @@ public class ArraysTask2_4 {
         }
         System.out.println("\n"+ "Полученное значение макс. элемента с чётным индексом");
         return array[max];
+
     }
 
     static void elemLessThanAverage(int[] array){
@@ -68,6 +74,7 @@ public class ArraysTask2_4 {
                 System.out.print(array[i] + " ");
             }
         }
+        System.out.println("\n");
     }
 
     static void twoMinElements(int[] array){
@@ -75,7 +82,6 @@ public class ArraysTask2_4 {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
-        System.out.println("\n");
 
         int minInd1, minInd2;
         minInd1 = 0;
@@ -97,7 +103,7 @@ public class ArraysTask2_4 {
                 minInd2 = i;
             }
         }
-        System.out.println("Two found minimal elements are: \n" + array[minInd1] + " and " + array[minInd2]);
+        System.out.println("\nTwo found minimal elements are: \n" + array[minInd1] + " and " + array[minInd2] + "\n");
     }
 
     static void arrayCompressionByDeletionOfElements(int[] array, int a, int b){
@@ -123,8 +129,19 @@ public class ArraysTask2_4 {
         System.out.println("\n" + "Compressed array:");
         for (int i = 0; i < arrayNew.length; i++) {
             System.out.print(arrayNew[i] + " ");
-
         }
     }
-}
 
+    static void sumOfDigitsOfTheWholeArray(int[] array){
+        int sum = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            int num = array[i];
+            while (num > 0) {
+                sum += num % 10;
+                num /= 10;
+            }
+        }
+        System.out.println("\n\nСумма цифр всех элементов массива = " + sum);
+    }
+}

@@ -31,7 +31,7 @@
    - 2.4.3 метод elemLessThanAverage
    - 2.4.4 метод twoMinElements
    - 2.4.5 метод arrayCompressionByDeletionOfElements
-   - 2.4.6 метод 
+   - 2.4.6 метод sumOfDigitsOfTheWholeArray
    - 
 
 3. Задача 3
