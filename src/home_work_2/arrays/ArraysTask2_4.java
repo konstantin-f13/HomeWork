@@ -8,7 +8,8 @@ public class ArraysTask2_4 {
 
 //        sumEvenPositiveElements(array);
 //        System.out.println(maxElWithEvenArrayIndex(array));
-        elemLessThanAverage(array);
+//        elemLessThanAverage(array);
+        twoMinElements(array);
 
 
 
@@ -71,6 +72,34 @@ public class ArraysTask2_4 {
         }
     }
 
+    static void twoMinElements(int[] array){
+        System.out.println("Generated array:");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println("\n");
 
+        int minInd1, minInd2;
+        minInd1 = 0;
+        minInd2 = 1;
+
+        if (array[minInd1] >= array[minInd2]) {
+            minInd1 = 1;
+            minInd2 = 0;
+        }
+
+        for (int i = 2; i < array.length; i++) {
+            if (array[i] <= array[minInd1]){
+                if (array[minInd1] <= array[minInd2]){
+                    minInd2 = i;
+                } else if (array[minInd1] > array[minInd2]){
+                    minInd1 = i;
+                }
+            } else if (array[i] <= array[minInd2]){
+                minInd2 = i;
+            }
+        }
+        System.out.println("Two found minimal elements are: \n" + array[minInd1] + " and " + array[minInd2]);
+    }
 }
 
