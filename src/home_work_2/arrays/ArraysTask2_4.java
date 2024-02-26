@@ -7,11 +7,13 @@ public class ArraysTask2_4 {
         int[] array = ArraysUtils.arrayRandom(50,100);
 
 //        sumEvenPositiveElements(array);
-        System.out.println(maxElWithEvenArrayIndex(array));
+//        System.out.println(maxElWithEvenArrayIndex(array));
+        elemLessThanAverage(array);
+
+
 
 
     }
-
     static void sumEvenPositiveElements(int[] array){
         Random random = new Random();
         int[] arrayNew;
@@ -50,5 +52,25 @@ public class ArraysTask2_4 {
         System.out.println("\n"+ "Полученное значение макс. элемента с чётным индексом");
         return array[max];
     }
+
+    static void elemLessThanAverage(int[] array){
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        System.out.println("sum=" + sum);
+
+        float average = sum / array.length;
+        System.out.println("average=" + average);
+        System.out.println("Elements less than the average value");
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < average) {
+                System.out.print(array[i] + " ");
+            }
+        }
+    }
+
+
 }
 

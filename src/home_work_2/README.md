@@ -28,8 +28,8 @@
    - 2.4 ArraysTask2_4
    - 2.4.1 метод sumEvenPositiveElements
    - 2.4.2 метод maxElWithEvenArrayIndex
-   - 2.4.3
-   - 2.4.4
+   - 2.4.3 метод elemLessThanAverage
+   - 2.4.4 
    - 2.4.5
    - 2.4.6
    - 
