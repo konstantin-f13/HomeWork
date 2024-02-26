@@ -25,9 +25,9 @@
    - 2.2.2 метод outputEverySecondElement
    - 2.2.3 метод outputReversed
    - 2.3* not done
-   - 2.4 
-   - 2.4.1
-   - 2.4.2
+   - 2.4 ArraysTask2_4
+   - 2.4.1 метод sumEvenPositiveElements
+   - 2.4.2 метод maxElWithEvenArrayIndex
    - 2.4.3
    - 2.4.4
    - 2.4.5
