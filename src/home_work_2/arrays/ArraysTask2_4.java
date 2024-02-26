@@ -6,13 +6,11 @@ public class ArraysTask2_4 {
     public static void main(String[] args) {
         int[] array = ArraysUtils.arrayRandom(50,100);
 
-//        sumEvenPositiveElements(array);
-//        System.out.println(maxElWithEvenArrayIndex(array));
-//        elemLessThanAverage(array);
+        sumEvenPositiveElements(array);
+        System.out.println(maxElWithEvenArrayIndex(array));
+        elemLessThanAverage(array);
         twoMinElements(array);
-
-
-
+        arrayCompressionByDeletionOfElements(array, 10, 50);//параметры a и b - диапазон данных, подлежащих удалению
 
     }
     static void sumEvenPositiveElements(int[] array){
@@ -100,6 +98,33 @@ public class ArraysTask2_4 {
             }
         }
         System.out.println("Two found minimal elements are: \n" + array[minInd1] + " and " + array[minInd2]);
+    }
+
+    static void arrayCompressionByDeletionOfElements(int[] array, int a, int b){
+        int[] arrayNew;
+        arrayNew = new int[array.length];
+        System.out.println("Generated elements:");
+        for (int i = 0; i < array.length; i++) {
+            arrayNew[i] = array[i];
+            System.out.print(arrayNew[i] + " ");
+        }
+
+        for (int i = 0; i < arrayNew.length; i++) {
+            if((arrayNew[i] >= a) && (arrayNew[i] <= b)) {
+
+                for (int j = i; j < arrayNew.length - 1; j++) {//цикл по сдвигу всех оставшихся элементов,
+                    // кроме самого правого на 1 позицию влево
+                    arrayNew[j] = arrayNew[j + 1];
+                }
+                arrayNew[arrayNew.length - 1] = 0;//присваивание самому правому элементу значения 0
+                i--;//возврат на предыдущую итерацию для проверки нового значения
+            }
+        }
+        System.out.println("\n" + "Compressed array:");
+        for (int i = 0; i < arrayNew.length; i++) {
+            System.out.print(arrayNew[i] + " ");
+
+        }
     }
 }
 
