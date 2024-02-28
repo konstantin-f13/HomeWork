@@ -32,9 +32,9 @@
    - 2.4.4 метод twoMinElements
    - 2.4.5 метод arrayCompressionByDeletionOfElements
    - 2.4.6 метод sumOfDigitsOfTheWholeArray
-   - 
 
-3. Задача 3 Solution in files ShakerSort.drawio and ShakerSort.drawio.pdf
+3. Задача 3 
+Solution in folder "sorts", files ShakerSort.drawio and ShakerSort.drawio.pdf
 4. Задача 4 
    - 4.1 SortUtils
    - 4.2 SortsMain
