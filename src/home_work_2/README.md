@@ -36,3 +36,7 @@
 
 3. Задача 3 Solution in files ShakerSort.drawio and ShakerSort.drawio.pdf
 4. Задача 4 
+   - 4.1.1 SortUtils
+   - 4.1.2 SortUtils
+   - 4.2 SortsMain
+
