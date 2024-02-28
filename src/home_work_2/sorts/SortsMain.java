@@ -1,5 +1,9 @@
 package home_work_2.sorts;
 
+import home_work_2.arrays.ArraysUtils;
+
+import java.util.Arrays;
+
 public class SortsMain {
     public static void main(String[] args) {
         int[] array1 = {1,2,3,4,5,6};
@@ -18,9 +22,18 @@ public class SortsMain {
         SortUtils.shake(array4);
         SortUtils.shake(array5);
 
+        int[] array6 = ArraysUtils.arrayRandom(50,100);
+        System.out.println("Randomly generated array:");
+        System.out.println(Arrays.toString(array6));
+        Arrays.sort(array6);
+        System.out.println("Sorted array:");
+        System.out.println(Arrays.toString(array6) + "\n");
 
-
-
-
+        int[] array7 = ArraysUtils.arrayFromConsole();
+        System.out.println("Array received through console:");
+        System.out.println(Arrays.toString(array7));
+        Arrays.sort(array7);
+        System.out.println("Sorted array:");
+        System.out.println(Arrays.toString(array7));
     }
 }
