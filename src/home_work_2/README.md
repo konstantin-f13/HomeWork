@@ -2,7 +2,7 @@
 
 1. Задача 1
     - 1.1 LoopsTask1_1
-    - 1.1.2* not done
+    - 1.1.2* LoopsTask1_1_Recursion
     - 1.2 LoopsTask1_2
     - 1.3 LoopsTask1_3
     - 1.4* not done
