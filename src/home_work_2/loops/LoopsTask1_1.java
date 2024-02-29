@@ -17,11 +17,12 @@ public class LoopsTask1_1 {
 
         for (int i = 1; i <= givenValue ; i++) {
             result = result * i;
+            System.out.print(i + " * ");
             if (result < 0) {
                 System.out.println("Ошибка. Результат произведения превысил максимальное значения типа long");
                 return;
             }
         }
-        System.out.println("Результат умножения всех чисел от 1 до заданного числа " + givenValue + " = " + result);
+        System.out.println("\b\b\b = " + result);
     }
 }
