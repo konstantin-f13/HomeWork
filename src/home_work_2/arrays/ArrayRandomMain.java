@@ -1,5 +1,7 @@
 package home_work_2.arrays;
 
+import home_work_2.utils.ArraysUtils;
+
 public class ArrayRandomMain {
 
     public static void main(String[] args) {

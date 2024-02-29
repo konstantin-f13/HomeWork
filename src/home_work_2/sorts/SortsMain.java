@@ -1,6 +1,7 @@
 package home_work_2.sorts;
 
-import home_work_2.arrays.ArraysUtils;
+import home_work_2.utils.ArraysUtils;
+import home_work_2.utils.SortUtils;
 
 import java.util.Arrays;
 

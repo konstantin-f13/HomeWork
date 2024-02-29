@@ -1,5 +1,7 @@
 package home_work_2.arrays;
 
+import home_work_2.utils.ArraysUtils;
+
 import java.util.Random;
 
 public class ArraysTask2_4 {
