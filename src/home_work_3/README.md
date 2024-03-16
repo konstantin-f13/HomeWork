@@ -37,8 +37,12 @@
    - 7.5 класс CalculatorWithCounterDelegateCompositeMain
 
 8. Задача 8
-   - 8.x-8.x класс 
-   - 8.x класс 
+   - 8.1-8.6 класс CalculatorWithCounterAutoAggregation
+   - 8.7 класс CalculatorWithCounterDelegateAggregationMain
+
+9. Задача 9
+   - 9.x-9.x класс 
+   - 9.x класс 
    
 
 
