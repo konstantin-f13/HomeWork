@@ -1,11 +1,11 @@
-# Описание соответствия классов заданиям
+# Соответствие классов заданиям
 
 1. Задача 1
-    - 1.1 WithoutCalculatorMain
+    - **1.1 WithoutCalculatorMain**
     - 
 
 2. Задача 2 
-   - 2.1-2.4 класс CalculatorWithOperator
+   - **2.1-2.4 класс CalculatorWithOperator**
    - деление divisionMethod
    - умножение multiplicationMethod
    - вычитание subtractionMethod
@@ -13,6 +13,11 @@
    - возведение в целую степень expOfNonIntPositiveNumber
    - модуль числа absoluteValue
    - квадратный корень из числа squareRoot
-   - 2.5 CalculatorWithOperatorMain
+   
+   - **2.5 CalculatorWithOperatorMain**
 
 3. Задача 3
+   - 3.2 класс CalculatorWithMathCopy
+   - 3.3 класс CalculatorWithMathCopy
+   - 
+4. 
