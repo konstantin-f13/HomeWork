@@ -31,6 +31,14 @@
 6. Задача 6
    - 6.1-6.4 класс CalculatorWithCounterAutoSuper
    - 6.5 класс CalculatorWithCounterAutoSuperMain
+
+7. Задача 7
+   - 7.1-7.4 класс CalculatorWithCounterAutoComposite
+   - 7.5 класс CalculatorWithCounterDelegateCompositeMain
+
+8. Задача 8
+   - 8.x-8.x класс 
+   - 8.x класс 
    
 
 
