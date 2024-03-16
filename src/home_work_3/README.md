@@ -25,3 +25,6 @@
    - 4.4 класс CalculatorWithMathExtendsMain
 
 5. Задача 5
+   - 5.1-5.4 класс CalculatorWithCounterClassic
+   - 5.5 класс CalculatorWithCounterClassicMain
+   - 
