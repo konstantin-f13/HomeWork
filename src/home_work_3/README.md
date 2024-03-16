@@ -18,6 +18,10 @@
 
 3. Задача 3
    - 3.2 класс CalculatorWithMathCopy
-   - 3.3 класс CalculatorWithMathCopy
+   - 3.3 класс CalculatorWithMathCopyMain
    - 
-4. 
+4. Задача 4
+   - 4.1-4.3 класс CalculatorWithMathExtends
+   - 4.4 класс CalculatorWithMathExtendsMain
+
+5. Задача 5

@@ -7,7 +7,5 @@ public class CalculatorWithMathCopyMain {
         CalculatorWithMathCopy calc2 = new CalculatorWithMathCopy();
         double result = calc2.additionMethod(calc2.additionMethod(4.1,calc2.multiplicationMethod(15, 7)),calc2.expOfNonIntPositiveNumber(calc2.divisionMethod(28, 5),2));
         System.out.printf("%.2f", result);// 140,46
-
-
     }
 }
