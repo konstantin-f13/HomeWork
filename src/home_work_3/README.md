@@ -27,4 +27,10 @@
 5. Задача 5
    - 5.1-5.4 класс CalculatorWithCounterClassic
    - 5.5 класс CalculatorWithCounterClassicMain
-   - 
+
+6. Задача 6
+   - 6.1-6.4 класс CalculatorWithCounterAutoSuper
+   - 6.5 класс CalculatorWithCounterAutoSuperMain
+   
+
+
