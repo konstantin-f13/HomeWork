@@ -51,5 +51,7 @@
    - 11.1-11.6 класс CalculatorWithCounterAutoAggregationInterface
    - 11.7 класс CalculatorWithCounterAutoCompositeInterfaceMain
 
-
+12. Задача 12*
+    - 12.1-12.7 класс CalculatorWithMemory
+    - 12.8 класс CalculatorWithMemoryMain
 
