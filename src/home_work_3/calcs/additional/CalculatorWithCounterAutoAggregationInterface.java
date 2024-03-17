@@ -1,22 +1,16 @@
 package home_work_3.calcs.additional;
 
-import home_work_3.calcs.simple.CalculatorWithMathCopy;
+import home_work_3.calcs.api.ICalculator;
 
-public class CalculatorWithCounterAutoAggregation {
+public class CalculatorWithCounterAutoAggregationInterface {
     private int countOperation = 0;
-    private CalculatorWithMathCopy calc;
     public long getCountOperation(){
         return countOperation;
     }
-    /**
-     *
-     * @param calc передаем в конструктор экземпляр класса CalculatorWithMathCopy
-     *             или же его наследников для делегирования ему расчётов
-     */
-    public CalculatorWithCounterAutoAggregation(CalculatorWithMathCopy calc) {
+    ICalculator calc;
+    public CalculatorWithCounterAutoAggregationInterface(ICalculator calc) {
         this.calc = calc;
     }
-
     public double divisionMethod(double firstNum, double secondNum){
         countOperation++;
         return calc.divisionMethod(firstNum, secondNum);
@@ -29,7 +23,6 @@ public class CalculatorWithCounterAutoAggregation {
         countOperation++;
         return calc.subtractionMethod(firstNum, secondNum);
     }
-
     public double additionMethod(double firstNum, double secondNum){
         countOperation++;
         return calc.additionMethod(firstNum, secondNum);

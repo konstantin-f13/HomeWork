@@ -45,8 +45,11 @@
    - 9.7 класс CalculatorWithCounterDelegateChoiceAggregationMain
    
 10. Задача 10
-   - 10... класс 
+   - Интерфейс ICalculator
 
-   
+11. Задача 11
+   - 11.1-11.6 класс CalculatorWithCounterAutoAggregationInterface
+   - 11.7 класс CalculatorWithCounterAutoCompositeInterfaceMain
+
 
 
