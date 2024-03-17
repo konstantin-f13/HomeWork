@@ -41,8 +41,12 @@
    - 8.7 класс CalculatorWithCounterDelegateAggregationMain
 
 9. Задача 9
-   - 9.x-9.x класс 
-   - 9.x класс 
+   - 9.1-9.6 класс CalculatorWithCounterAutoChoiceAggregation
+   - 9.7 класс CalculatorWithCounterDelegateChoiceAggregationMain
+   
+10. Задача 10
+   - 10... класс 
+
    
 
 
