@@ -5,10 +5,6 @@ import home_work_3.calcs.api.ICalculator;
 public class CalculatorWithMemoryDecorator implements ICalculator {
     private ICalculator calc;
     double temp, savedValue;
-    private int countOperation = 0;
-    public long getCountOperation(){
-        return countOperation;
-    }
 
     public ICalculator getCalculator() {
         return calc;
@@ -28,32 +24,32 @@ public class CalculatorWithMemoryDecorator implements ICalculator {
     }
 
     public double divisionMethod(double firstNum, double secondNum){
-        countOperation++;
-        return calc.divisionMethod(firstNum, secondNum);
+        temp = calc.divisionMethod(firstNum, secondNum);
+        return temp;
     }
     public double multiplicationMethod(double firstNum, double secondNum){
-        countOperation++;
-        return calc.multiplicationMethod(firstNum, secondNum);
+        temp = calc.multiplicationMethod(firstNum, secondNum);
+        return temp;
     }
     public double subtractionMethod(double firstNum, double secondNum){
-        countOperation++;
-        return calc.subtractionMethod(firstNum, secondNum);
+        temp = calc.subtractionMethod(firstNum, secondNum);
+        return temp;
     }
     public double additionMethod(double firstNum, double secondNum){
-        countOperation++;
-        return calc.additionMethod(firstNum, secondNum);
+        temp = calc.additionMethod(firstNum, secondNum);
+        return temp;
     }
     public double expOfNonIntPositiveNumber(double number, int power){
-        countOperation++;
-        return calc.expOfNonIntPositiveNumber(number, power);
+        temp = calc.expOfNonIntPositiveNumber(number, power);
+        return temp;
     }
     public double absoluteValue(double number){
-        countOperation++;
-        return calc.absoluteValue(number);
+        temp = calc.absoluteValue(number);
+        return temp;
     }
     public double squareRoot(double number){
-        countOperation++;
-        return calc.squareRoot(number);
+        temp = calc.squareRoot(number);
+        return temp;
     }
 
 }
