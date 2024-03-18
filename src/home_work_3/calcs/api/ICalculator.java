@@ -10,4 +10,7 @@ public interface ICalculator {
     double absoluteValue(double number);
     double squareRoot(double number);
 
+
+
+
 }

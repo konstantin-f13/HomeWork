@@ -55,3 +55,8 @@
     - 12.1-12.7 класс CalculatorWithMemory
     - 12.8 класс CalculatorWithMemoryMain
 
+13. Задача 13
+    - 13.1-13.4 классы  CalculatorWithCounterAutoDecorator, CalculatorWithMemoryDecorator
+    - 13.5-13.6 класс CalculatorDecoratorMain 
+
+14. Задача 14* not done yet
