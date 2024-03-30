@@ -63,9 +63,29 @@ public class Main {
         container = new DataContainer<>(stringArr);
         System.out.println(container.get(1));//null
 
+        /**
+         * задание 7.1.1
+         */
+        stringArr = new String[]{"1", "2", "3", "777"};
+        container = new DataContainer<>(stringArr);
+        System.out.println(container.delete(3));
+        System.out.println(Arrays.toString(container.getItems()));
 
+        /**
+         * задание 7.2.1
+         */
+        stringArr = new String[]{"1", "2", "3", "777"};
+        container = new DataContainer<>(stringArr);
+        System.out.println(container.delete(9));
+        System.out.println(Arrays.toString(container.getItems()));
 
-
+        /**
+         * задание 7.3.1
+         */
+        stringArr = new String[]{"1", "2", "3", "777"};
+        container = new DataContainer<>(stringArr);
+        System.out.println(container.delete(2));
+        System.out.println(Arrays.toString(container.getItems()));
 
 
 
