@@ -68,24 +68,68 @@ public class Main {
          */
         stringArr = new String[]{"1", "2", "3", "777"};
         container = new DataContainer<>(stringArr);
-        System.out.println(container.delete(3));
-        System.out.println(Arrays.toString(container.getItems()));
+        System.out.println(container.delete(3));//true
+        System.out.println(Arrays.toString(container.getItems()));//[1, 2, 3]
 
         /**
          * задание 7.2.1
          */
         stringArr = new String[]{"1", "2", "3", "777"};
         container = new DataContainer<>(stringArr);
-        System.out.println(container.delete(9));
-        System.out.println(Arrays.toString(container.getItems()));
+        System.out.println(container.delete(9));//false
+        System.out.println(Arrays.toString(container.getItems()));//[1, 2, 3, 777]
 
         /**
          * задание 7.3.1
          */
         stringArr = new String[]{"1", "2", "3", "777"};
         container = new DataContainer<>(stringArr);
-        System.out.println(container.delete(2));
-        System.out.println(Arrays.toString(container.getItems()));
+        System.out.println(container.delete(2));//true
+        System.out.println(Arrays.toString(container.getItems()));//[1, 2, 777]
+
+        /**
+         * задание 8.1.1
+         */
+        stringArr = new String[]{"1", "2", "3", "777"};
+        container = new DataContainer<>(stringArr);
+        System.out.println(container.delete(null));//false
+        System.out.println(Arrays.toString(container.getItems()));//[1, 2, 3, 777]
+
+        /**
+         * задание 8.1.2
+         */
+        stringArr = new String[]{"1", "2", "3", "777", null};
+        container = new DataContainer<>(stringArr);
+        System.out.println(container.delete(null));//false
+        System.out.println(Arrays.toString(container.getItems()));//[1, 2, 3, 777, null]
+
+        /**
+         * задание 8.2.1
+         */
+        stringArr = new String[]{"1", "2", "3", "777"};
+        container = new DataContainer<>(stringArr);
+        System.out.println(container.delete("777"));//true
+        System.out.println(Arrays.toString(container.getItems()));//[1, 2, 3]
+
+        /**
+         * задание 8.3.1
+         */
+        stringArr = new String[]{"1", "2", "3", "777"};
+        container = new DataContainer<>(stringArr);
+        System.out.println(container.delete("111"));//false
+        System.out.println(Arrays.toString(container.getItems()));//[1, 2, 3, 777]
+
+        /**
+         * задание 8.4.1
+         */
+        stringArr = new String[]{"1", "2", "3", "777", "3"};
+        container = new DataContainer<>(stringArr);
+        System.out.println(container.delete("3"));//true
+        System.out.println(Arrays.toString(container.getItems()));//[1, 2, 777, 3]
+
+
+
+
 
 
 

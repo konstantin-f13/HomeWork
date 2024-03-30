@@ -57,4 +57,29 @@ public class DataContainer<T> {
             }
         }
     }
+
+    public boolean delete (T item){
+        if (item == null){
+            return false;
+        } else {
+            for (int i = 0; i < data.length; i++) {
+                if (item == data[i]){
+                    if (i == data.length - 1) {
+                        data = Arrays.copyOf(data, data.length - 1);
+                        return true;
+                    } else if (i == 0){
+                        data = Arrays.copyOfRange(data, 1, data.length - 1);
+                        return true;
+                    } else {
+                        T[] arrDestination;
+                        arrDestination = Arrays.copyOf(data, data.length - 1);
+                        System.arraycopy(data, i + 1, arrDestination, i, data.length - 1 - i);
+                        data = arrDestination;
+                        return true;
+                    }
+                    }
+            }
+        return false;
+        }
+    }
 }
