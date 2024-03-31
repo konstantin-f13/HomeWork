@@ -106,4 +106,9 @@ public class DataContainer<T> {
         result.append("]");
         return result.toString();
     }
+
+    public static <T extends Comparable<T>> void sort(DataContainer<T> container){
+        ArraySorting.sort(container.data);
+        }
+
 }

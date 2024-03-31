@@ -172,6 +172,21 @@ public class Main {
         System.out.println(container.toString());//[]
         System.out.println(Arrays.toString(container.getItems()));//[]
 
-    }
+        /**
+         * задание 11. Проверка с объектами типа Integer
+         */
+        integerArr = new Integer[]{1, 555, 3, 777, 3};
+        container = new DataContainer<>(integerArr);
+        DataContainer.sort(container);
+        System.out.println(container);//[1, 3, 3, 555, 777]
 
+        /**
+         * задание 11. Проверка с объектами типа String
+         */
+        stringArr = new String[]{"i", "hello", "1", "Как домашка"};
+        containerStr = new DataContainer<>(stringArr);
+        DataContainer.sort(containerStr);//не отрабатывает корректно
+        System.out.println(containerStr);//не отрабатывает корректно
+
+    }
 }

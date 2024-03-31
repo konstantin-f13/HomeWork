@@ -1,7 +1,12 @@
 # Соответствие классов заданиям
 
-Основной класс - класс DataContainer.
+1. Основной класс - класс DataContainer.
 
-Comparators: ComparatorIntegerBySize, ComparatorStringByLength.
+2. Comparators: ComparatorIntegerBySize, ComparatorStringByLength.
 
-Runner - класс Main.
+3. Runner - класс Main, содержит комменты по заданиям.
+
+4. Utils классы - класс ArraySorting в папке utils, содержит метод сортировки массивов.
+В классе ArraySorting методы sort для заданий 9 и 11.
+
+
