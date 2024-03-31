@@ -147,7 +147,30 @@ public class Main {
         System.out.println(Arrays.toString(containerStr.getItems()));//[i, 1, hello, Как домашка]
 
 
+        /**
+         * задание 10.1
+         */
+        integerArr = new Integer[]{1, 2, 3, 777, 3};
+        container = new DataContainer<>(integerArr);
+        System.out.println(container.toString());//[1, 2, 3, 777, 3]
+        System.out.println(Arrays.toString(container.getItems()));//[1, 2, 3, 777, 3]
 
+        /**
+         * задание 10.2
+         */
+        integerArr = new Integer[]{1, 2, 3, null};
+        container = new DataContainer<>(integerArr);
+        System.out.println(container.toString());//[1, 2, 3]
+        System.out.println(Arrays.toString(container.getItems()));//[1, 2, 3, null]
+
+
+        /**
+         * задание 10.3
+         */
+        integerArr = new Integer[]{};
+        container = new DataContainer<>(integerArr);
+        System.out.println(container.toString());//[]
+        System.out.println(Arrays.toString(container.getItems()));//[]
 
     }
 

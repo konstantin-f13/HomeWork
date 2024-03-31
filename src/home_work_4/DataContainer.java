@@ -11,7 +11,6 @@ public class DataContainer<T> {
 
     public DataContainer(T[] data) {
         this.data = data;
-
     }
 
     public int add(T item){
@@ -91,9 +90,20 @@ public class DataContainer<T> {
         ArraySorting.sort(comparator, data);
     }
 
+    public String toString(){
+        StringBuilder result = new StringBuilder("[");
+        boolean extraSymb = false;
 
-
-
-
-
+        for (int i = 0; i < data.length; i++) {
+            if (data[i] != null) {
+                if (extraSymb) {
+                    result.append(", ");
+                }
+                result.append(data[i]);
+                extraSymb = true;
+            }
+        }
+        result.append("]");
+        return result.toString();
+    }
 }
