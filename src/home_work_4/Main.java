@@ -185,8 +185,8 @@ public class Main {
          */
         stringArr = new String[]{"i", "hello", "1", "Как домашка"};
         containerStr = new DataContainer<>(stringArr);
-        DataContainer.sort(containerStr);//не отрабатывает корректно
-        System.out.println(containerStr);//не отрабатывает корректно
+        DataContainer.sort(containerStr);
+        System.out.println(containerStr);//[i, 1, hello, Как домашка]
 
     }
 }
