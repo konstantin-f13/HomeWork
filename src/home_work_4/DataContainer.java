@@ -1,6 +1,9 @@
 package home_work_4;
 
+import home_work_4.utils.ArraySorting;
+
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Objects;
 
 public class DataContainer<T> {
@@ -83,4 +86,14 @@ public class DataContainer<T> {
         return false;
         }
     }
+
+    public void sort(Comparator<T> comparator){
+        ArraySorting.sort(comparator, data);
+    }
+
+
+
+
+
+
 }
