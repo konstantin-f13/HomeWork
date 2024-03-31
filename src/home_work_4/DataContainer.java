@@ -1,6 +1,7 @@
 package home_work_4;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class DataContainer<T> {
     private T[] data;
@@ -63,7 +64,7 @@ public class DataContainer<T> {
             return false;
         } else {
             for (int i = 0; i < data.length; i++) {
-                if (item == data[i]){
+                if (Objects.equals(item, data[i])){
                     if (i == data.length - 1) {
                         data = Arrays.copyOf(data, data.length - 1);
                         return true;
