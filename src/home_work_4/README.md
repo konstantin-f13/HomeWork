@@ -1,12 +1,16 @@
 # Соответствие классов заданиям
 
-1. Основной класс - класс DataContainer.
+**Задачи 1 - 8**: класс DataContainer и runner Main.    
 
-2. Comparators: ComparatorIntegerBySize, ComparatorStringByLength.
+**Задача 9**: метод public void sort(Comparator<T> comparator) в классе DataContainer с реализацией метода в классе ArraySorting. Вспомогательные Comparators: ComparatorIntegerBySize, ComparatorStringByLength.
 
-3. Runner - класс Main, содержит комменты по заданиям.
+**Задача 10**: метод toString() в классе DataContainer.
 
-4. Utils классы - класс ArraySorting в папке utils, содержит метод сортировки массивов.
-В классе ArraySorting методы sort для заданий 9 и 11.
+**Задача 11**: статический метод sort(DataContainer<T> container) в классе DataContainer.
+
+**Задача 12**: статический метод sort(DataContainer<T> container, Comparator<T> comparator) в классе DataContainer.
+
+Основной класс - класс DataContainer.Runner - класс Main, содержит комменты с примерами из задания. Utils классы - класс ArraySorting в папке utils, содержит методы сортировки массивов для заданий 9, 11 и 12.
+
 
 

@@ -111,4 +111,8 @@ public class DataContainer<T> {
         ArraySorting.sort(container.data);
         }
 
+    public static <T> void sort(DataContainer<T> container, Comparator<T> comparator){
+        ArraySorting.sort(comparator, container.data);
+    }
+
 }

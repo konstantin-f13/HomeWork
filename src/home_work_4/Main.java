@@ -1,7 +1,6 @@
 package home_work_4;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
@@ -188,5 +187,20 @@ public class Main {
         DataContainer.sort(containerStr);
         System.out.println(containerStr);//[i, 1, hello, Как домашка]
 
+        /**
+         * задание 12. Проверка с объектами типа Integer
+         */
+        integerArr = new Integer[]{1, 555, 3, 777, 3, 0};
+        container = new DataContainer<>(integerArr);
+        DataContainer.sort(container, new ComparatorIntegerBySize());
+        System.out.println(Arrays.toString(container.getItems()));//[0, 1, 3, 3, 555, 777]
+
+        /**
+         * задание 12. Проверка с объектами типа String
+         */
+        stringArr = new String[]{"i", "hello", "1", "Как домашка"};
+        containerStr = new DataContainer<>(stringArr);
+        DataContainer.sort(containerStr, new ComparatorStringByLength());
+        System.out.println(Arrays.toString(containerStr.getItems()));//[i, 1, hello, Как домашка]
     }
 }
