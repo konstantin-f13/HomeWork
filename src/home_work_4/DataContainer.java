@@ -30,7 +30,7 @@ public class DataContainer<T> {
     }
 
     public T get(int index){
-        if (index >= data.length ){
+        if (index >= data.length || index < 0){
             return null;
         } else {
             return data[index];
@@ -42,7 +42,7 @@ public class DataContainer<T> {
     }
 
     public boolean delete(int index){
-        if (index >= data.length ){
+        if (index >= data.length || index < 0){
             return false;
         } else {
             if (index == data.length - 1){
