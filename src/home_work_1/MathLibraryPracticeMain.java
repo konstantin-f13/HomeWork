@@ -31,26 +31,5 @@ public class MathLibraryPracticeMain {
         System.out.println("Вычисление квадратного корня числа 9 = " + Math.sqrt(9)); //3.0
         System.out.println("Вычисление квадратного корня числа 144 = " + Math.sqrt(144)); //12.0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
 }
