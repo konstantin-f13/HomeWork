@@ -1,5 +1,6 @@
 package test.home_work_1;
 
+import home_work_1.OperatorsPriorityMain;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -14,10 +15,7 @@ public class OperatorsPriorityTest {
     @DisplayName("Checks priority of addition and subtraction operators.")
     @Test
     public void testPriorityEx_2_1(){
-        int a = 5;
-        int b = 2;
-        int c = 8;
-        int result = a + b / c;
+        double result = OperatorsPriorityMain.expression_2_1(5, 2, 8);
         Assertions.assertEquals(5, result);
     }
 
@@ -30,10 +28,7 @@ public class OperatorsPriorityTest {
     @DisplayName("Checks priority of addition, subtraction and brackets.")
     @Test
     public void testPriorityEx_2_2(){
-        int a = 5;
-        int b = 2;
-        int c = 8;
-        int result = (a + b) / c;
+        double result = OperatorsPriorityMain.expression_2_2(5, 2, 8);
         Assertions.assertEquals(0, result);
     }
 
@@ -47,10 +42,8 @@ public class OperatorsPriorityTest {
     @DisplayName("Checks priority of addition, subtraction, Unary Post Increment and brackets.")
     @Test
     public void testPriorityEx_2_3(){
-        int a = 5;
-        int b = 2;
-        int c = 8;
-        int result = (a + b++) / c;
+
+        double result = OperatorsPriorityMain.expression_2_3(5, 2, 8);
         Assertions.assertEquals(0, result);
     }
 
@@ -65,10 +58,7 @@ public class OperatorsPriorityTest {
     @DisplayName("Checks priority of addition, Unary Post Increment, division,  Unary Post Decrement and brackets.")
     @Test
     public void testPriorityEx_2_4(){
-        int a = 5;
-        int b = 2;
-        int c = 8;
-        int result = (a + b++) / --c;
+        double result = OperatorsPriorityMain.expression_2_4(5, 2, 8);
         Assertions.assertEquals(1, result);
     }
 
@@ -88,10 +78,7 @@ public class OperatorsPriorityTest {
     @DisplayName("Checks priority of multiplication, Unary Post Increment, Unary Post Decrement, division, Bitwise Right Shift, brackets.")
     @Test
     public void testPriorityEx_2_5(){
-        int a = 5;
-        int b = 2;
-        int c = 8;
-        int result = (a * b >> b++) / --c;
+        double result = OperatorsPriorityMain.expression_2_5(5, 2, 8);
         Assertions.assertEquals(0, result);
     }
 
@@ -109,14 +96,7 @@ public class OperatorsPriorityTest {
     @DisplayName("Checks priority of addition, greater than, Ternary Conditional, multiplication, Bitwise Right Shift, Unary Post Increment, Unary Post Decrement, brackets")
     @Test
     public void testPriorityEx_2_6(){
-        int a = 5;
-        int b = 2;
-        int c = 8;
-        int d = 7;
-        int e = 20;
-        int f = 68;
-        int g = 22;
-        int result = (a + d > e ? f : g * b >> b++) / --c;
+        double result = OperatorsPriorityMain.expression_2_6(5, 2, 8, 7,20,68,22);
         Assertions.assertEquals(1, result);
     }
 
@@ -133,9 +113,8 @@ public class OperatorsPriorityTest {
     @DisplayName("Checks priority of subtraction, greater than, &&, multiplication, less than")
     @Test
     public void testPriorityEx_2_8(){
-        boolean result2;
-        result2 = 6 - 2 > 3 && 12 * 12 <= 119;
-        Assertions.assertEquals(false, result2);
+        boolean result = OperatorsPriorityMain.expression_2_8(6,2,3,12,119);
+        Assertions.assertEquals(false, result);
     }
 
     /**
@@ -144,10 +123,7 @@ public class OperatorsPriorityTest {
     @DisplayName("Checks work of boolean operator &&")
     @Test
     public void testPriorityEx_2_9(){
-        boolean one = true;
-        boolean two = false;
-        boolean result2 = one && two;
-        Assertions.assertEquals(false, result2);
+        boolean result = OperatorsPriorityMain.expression_2_9();
+        Assertions.assertEquals(false, result);
     }
-
 }

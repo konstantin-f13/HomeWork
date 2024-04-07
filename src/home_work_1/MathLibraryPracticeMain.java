@@ -32,4 +32,5 @@ public class MathLibraryPracticeMain {
         System.out.println("Вычисление квадратного корня числа 144 = " + Math.sqrt(144)); //12.0
 
     }
+
 }
