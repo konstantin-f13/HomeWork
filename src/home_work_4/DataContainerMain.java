@@ -2,7 +2,7 @@ package home_work_4;
 
 import java.util.Arrays;
 
-public class Main {
+public class DataContainerMain {
     public static void main(String[] args) {
 
         Integer[] integerArr;
