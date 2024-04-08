@@ -7,11 +7,11 @@
 3. Задача 3 - MathLibraryPracticeTest
 4. Задача 4
    - 4.1 класс OddNumbersTest
-   - 4.2 skipped (ввод через консоль)
-   - 4.3 skipped (ввод через консоль)
-   - 4.4 skipped (ввод через консоль)
-   - 4.5 skipped (ввод через консоль)
-   - 4.6 skipped (ввод через консоль)
+   - 4.2 класс MediumNumberAmongThreeTest
+   - 4.3 класс DivisibilityCheckTest
+   - 4.4 tbd
+   - 4.5 tbd
+   - 4.6 tbd
 5. Задача 5* - класс SleepInOrNotTest
 6. Задача 6
    - 6.1 ~~класс NameInquiryIfElse~~

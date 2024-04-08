@@ -14,13 +14,16 @@ public class MediumNumberAmongThreeMain {
         System.out.println("The 2nd number is: " + b + "\n" +"Enter the 3rd number");
         c = console.nextByte();
         System.out.println("The 3rd number is: " + c);
+        System.out.println("Number " + mediumNumberAmongThree(a, b, c) + " is the medium number");
+    }
 
+    public static byte mediumNumberAmongThree(byte a, byte b, byte c){
         if ((a > b && a < c) || (a < b && a > c)) {
-            System.out.println("the 1st number = " + a + " is the medium number");
-        } else if ((b > a && b < c) || (b < a && b < c)) {
-            System.out.println("the 2nd number = " + b + " is the medium number");
+            return a;
+        } else if ((b > a && b < c) || (b < a && b > c)) {
+            return b;
         } else {
-            System.out.println("the 3rd number = " + c + " is the medium number");
+            return c;
         }
     }
 
