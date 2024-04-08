@@ -119,5 +119,4 @@ java: bad operand types for binary operator '/'
     public static boolean expression_2_9(){
         return true && false;
     }
-
 }
