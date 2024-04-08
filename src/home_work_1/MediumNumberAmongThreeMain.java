@@ -22,9 +22,6 @@ public class MediumNumberAmongThreeMain {
         } else {
             System.out.println("the 3rd number = " + c + " is the medium number");
         }
-
-
-
-
     }
+
 }

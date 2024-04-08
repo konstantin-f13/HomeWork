@@ -9,7 +9,7 @@ public class SleepInOrNotMain {
             System.out.println("Пора вставать и идти на работу!");
         }
     }
-    static boolean sleepIn(boolean weekday, boolean vacation){
+    public static boolean sleepIn(boolean weekday, boolean vacation){
         if (!weekday || vacation){
             return true;
         } else {
