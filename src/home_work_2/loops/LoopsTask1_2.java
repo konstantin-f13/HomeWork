@@ -6,29 +6,37 @@ package home_work_2.loops;
 
 public class LoopsTask1_2 {
     public static void main(String[] args) {
-
         String strNum = args[0];
+        System.out.println(loopsTask1_2(strNum));
+    }
+
+    public static String loopsTask1_2(String strNum){
         boolean onlyDigits = strNum.matches("\\d+");
         boolean nonIntNumber = strNum.matches("\\d+[.]\\d+");
         boolean notNumber = strNum.matches("\\D+");
         long digitsMultiplication = 1;
 
         if (onlyDigits) {
-            System.out.println("Заданное через аргумент к программе целое число = " + strNum);
-            System.out.print("Произведение всех цифр заданного числа = ");
+            String strResult = "Заданное через аргумент к программе целое число = " + strNum;
+            strResult += "\n" + "Произведение всех цифр заданного числа: " + "\n";
 
             for (int i = 0; i < strNum.length(); i++) {
-                System.out.print(strNum.charAt(i) + " * ");
+                strResult += strNum.charAt(i);
                 digitsMultiplication = digitsMultiplication * Character.getNumericValue(strNum.charAt(i));
+
+                if (i != (strNum.length() - 1)){
+                    strResult += " * ";
+                }
             }
 
-            System.out.println("\b\b" + "= " + digitsMultiplication);
+            strResult += " = " + digitsMultiplication;
+            return strResult;
         } else if (nonIntNumber) {
-            System.out.println("Введено нецелое число.");
+            return "Введено нецелое число.";
         } else if (notNumber) {
-            System.out.println("Введено не число, а вообще что-то другое");
+            return "Введено не число, а вообще что-то другое";
         } else {
-            System.out.println("Другая ошибка");
+            return "Другая ошибка";
         }
     }
 }

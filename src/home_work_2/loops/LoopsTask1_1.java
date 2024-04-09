@@ -13,16 +13,24 @@ public class LoopsTask1_1 {
         String str = args[0];
         int givenValue = Integer.parseInt(str, 10);
         System.out.println("Заданное число=" + givenValue);
+        System.out.println(loopsTask1_1(givenValue));
+    }
+
+    public static String loopsTask1_1(int givenValue){
         long result = 1;
+        String strResult = "";
 
         for (int i = 1; i <= givenValue ; i++) {
-            result = result * i;
-            System.out.print(i + " * ");
+                result = result * i;
+                strResult += i;
+                if (i < givenValue){
+                    strResult += " * ";
+                }
+
             if (result < 0) {
-                System.out.println("Ошибка. Результат произведения превысил максимальное значения типа long");
-                return;
+                return "Ошибка. Результат произведения превысил максимальное значения типа long";
             }
         }
-        System.out.println("\b\b\b = " + result);
+        return strResult + " = " + result;
     }
 }

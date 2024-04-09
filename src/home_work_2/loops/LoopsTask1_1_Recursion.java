@@ -7,7 +7,7 @@ public class LoopsTask1_1_Recursion {
         System.out.println("Заданное число= " + givenValue);
         System.out.println("Факториал заданного числа= " + factorial(givenValue));
     }
-    static int factorial(int n){
+    public static int factorial(int n){
         if (n == 1){
             return 1;
         } else {

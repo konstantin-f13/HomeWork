@@ -11,21 +11,24 @@ import java.util.Scanner;
 
 public class LoopsTask1_3 {
     public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+        System.out.println("Введите возводимое в степень число (целое или дробное, положительное или отрицательное)");
         String strNum;
+        strNum = console.next();
+        System.out.println("Введите положительное и целое число степени");
         String strPower;
+        strPower = console.next();
+        System.out.println(loopsTask1_3(strNum, strPower));
+    }
+
+    public static String loopsTask1_3(String strNum, String strPower){
         float num;
         long power;
-        Scanner console = new Scanner(System.in);
-
-        System.out.println("Введите возводимое в степень число (целое или дробное, положительное или отрицательное)");
-        strNum = console.next();
         boolean ifPosNegIntNonInt = strNum.matches("-?\\d+(\\.\\d+)?");//matches to positive, negative, integral and non-integral numbers
+        boolean ifPosIntegral = strPower.matches("\\d+");//matches only to positive integral numbers
 
         if (ifPosNegIntNonInt){
             num = Float.parseFloat(strNum);
-            System.out.println("Введите положительное и целое число степени");
-            strPower = console.next();
-            boolean ifPosIntegral = strPower.matches("\\d+");//matches only to positive integral numbers
 
             if (ifPosIntegral) {
                 power = Long.parseLong(strPower);
@@ -35,15 +38,13 @@ public class LoopsTask1_3 {
                     result = result * num;
                     count++;
                 }
-                System.out.println("Результат: " + num + " ^ " + power + " = " + result);
+                return "Результат: " + num + " ^ " + power + " = " + result;
 
             } else {
-                System.out.println("Вы ввели значение степени, не соответствующее запрошенным параметрам");
-                return;
+                return "Вы ввели значение степени, не соответствующее запрошенным параметрам";
             }
         } else {
-            System.out.println("Вы ввели значение, не соответствующее запрошенным параметрам");
-            return;
+            return "Вы ввели значение, не соответствующее запрошенным параметрам";
         }
     }
 }
