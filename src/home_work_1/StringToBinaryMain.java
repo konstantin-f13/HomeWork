@@ -13,7 +13,8 @@ public class StringToBinaryMain {
         System.out.println("Вывод числа -15 в двоичном виде: ");
         System.out.println(toBinaryString((byte)-15));//Должно вернуть 11110001
     }
-    static String toBinaryString(byte number){
+
+    public static String toBinaryString(byte number){
         String binaryValue = "";
         int quotientOfDivisionbyTwo;
 

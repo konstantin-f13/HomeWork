@@ -7,15 +7,17 @@ public class NameInquirySwitch {
         Scanner console = new Scanner(System.in);
         System.out.println("Введите Ваше имя");
         String name = console.next();
+        System.out.println(nameInquirySwitch(name));
+    }
+
+    public static String nameInquirySwitch(String name){
         switch (name) {
             case "Вася":
-                System.out.println("Привет!" + "\n" + "Я тебя так долго ждал");
-                break;
+                return "Привет!" + "\n" + "Я тебя так долго ждал";
             case "Анастасия":
-                System.out.println("Я тебя так долго ждал");
-                break;
+                return "Я тебя так долго ждал";
             default:
-                System.out.println("Добрый день! А вы кто?");
+                return "Добрый день! А вы кто?";
         }
     }
 }

@@ -12,7 +12,8 @@ public class CreatePhoneNumberMain {
         System.out.println("Номер телефона в отформатированном виде:");
         System.out.println(createPhoneNumber(myArray));
     }
-    static String createPhoneNumber(int[] phoneNumber){
+
+    public static String createPhoneNumber(int[] phoneNumber){
         return "(" + phoneNumber[0] + phoneNumber[1] + phoneNumber[2] + ") " + phoneNumber[3] + phoneNumber[4] + phoneNumber[5] + "-" + phoneNumber[6] + phoneNumber[7] + phoneNumber[9];
     }
 }
