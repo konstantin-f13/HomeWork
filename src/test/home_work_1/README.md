@@ -9,7 +9,7 @@
    - 4.1 класс OddNumbersTest
    - 4.2 класс MediumNumberAmongThreeTest
    - 4.3 класс DivisibilityCheckTest
-   - 4.4 tbd
+   - 4.4 класс BytesToKilobytesTest
    - 4.5 tbd
    - 4.6 tbd
 5. Задача 5* - класс SleepInOrNotTest
