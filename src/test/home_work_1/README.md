@@ -11,7 +11,7 @@
    - 4.3 класс DivisibilityCheckTest
    - 4.4 класс BytesToKilobytesTest
    - 4.5 класс LetterOrSymbolTest
-   - 4.6 tbd
+   - 4.6 класс LeapYearCheckTest
 5. Задача 5* - класс SleepInOrNotTest
 6. Задача 6
    - 6.1 ~~класс NameInquiryIfElse~~
