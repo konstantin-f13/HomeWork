@@ -8,10 +8,14 @@ public class LetterOrSymbolMain {
         System.out.println("Введите целое число");
         int a = console.nextInt();
         System.out.println("Введённое число=" + a);
+        System.out.println(methodLetterOrSymbol(a));
+    }
+
+    public static String methodLetterOrSymbol(int a){
         if ((a >= 65 && a <= 90) || (a >= 97 && a <= 122)) {
-            System.out.println("Это буква " + (char)a);
+            return "Это буква " + (char)a;
         } else {
-            System.out.println("Это не буква, а символ " + (char)a);
+            return "Это не буква, а символ " + (char)a;
         }
     }
 }
