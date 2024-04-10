@@ -4,13 +4,12 @@ import home_work_3.calcs.api.ICalculator;
 
 public class CalculatorWithCounterAutoAggregationInterface {
     private int countOperation = 0;
-    public long getCountOperation(){
-        return countOperation;
-    }
     ICalculator calc;
+
     public CalculatorWithCounterAutoAggregationInterface(ICalculator calc) {
         this.calc = calc;
     }
+
     public double divisionMethod(double firstNum, double secondNum){
         countOperation++;
         return calc.divisionMethod(firstNum, secondNum);
@@ -38,5 +37,8 @@ public class CalculatorWithCounterAutoAggregationInterface {
     public double squareRoot(double number){
         countOperation++;
         return calc.squareRoot(number);
+    }
+    public long getCountOperation(){
+        return countOperation;
     }
 }

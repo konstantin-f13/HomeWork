@@ -4,12 +4,12 @@ import home_work_3.calcs.api.ICalculator;
 
 public class CalculatorWithCounterAutoDecorator implements ICalculator {
     private ICalculator calc;
+    private int countOperation = 0;
 
     public CalculatorWithCounterAutoDecorator(ICalculator calc) {
         this.calc = calc;
     }
 
-    private int countOperation = 0;
     public long getCountOperation(){
         return countOperation;
     }
@@ -46,6 +46,4 @@ public class CalculatorWithCounterAutoDecorator implements ICalculator {
         countOperation++;
         return calc.squareRoot(number);
     }
-
-
 }
