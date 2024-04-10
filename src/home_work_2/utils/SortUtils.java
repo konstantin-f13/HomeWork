@@ -4,21 +4,16 @@ import java.util.Arrays;
 
 public class SortUtils {
 
-    public static void sort(int[] arr){
-
+    public static int[] sort(int[] arr) {
         int[] arrayNew;
         arrayNew = new int[arr.length];
-
-        System.out.println("Какой массив был до сортировки");
-
         for (int i = 0; i < arr.length; i++) {
             arrayNew[i] = arr[i];
         }
-        System.out.println(Arrays.toString(arrayNew));
 
 
         // Для всех элементов
-        for (int i = 0; i < arrayNew.length - 1; i++){
+        for (int i = 0; i < arrayNew.length - 1; i++) {
 
             for (int j = (arrayNew.length - 1); j > i; j--) // для всех элементов после i-ого
             {
@@ -30,54 +25,42 @@ public class SortUtils {
                 }
             }
         }
-
-        System.out.println("\n" + "Каким стал массив после сортировки");
-        System.out.println(Arrays.toString(arrayNew));
-        System.out.println("\n");
+        return arrayNew;
     }
-    public static void shake(int[] arr){
+
+    public static int[] shake(int[] arr) {
         int[] arrayNew;
         arrayNew = new int[arr.length];
 
-        System.out.println("Какой массив был до сортировки");
         for (int i = 0; i < arr.length; i++) {
             arrayNew[i] = arr[i];
         }
-        System.out.println(Arrays.toString(arrayNew));
 
         int left = 0, right = arrayNew.length - 1;
         int flag = 1;
 
-        while ((left < right) && flag > 0){
+        while ((left < right) && flag > 0) {
 
             flag = 0;
-            for (int i = left; i < right; i++)
-            {
-                if (arrayNew[i] > arrayNew[i+1])
-                {
+            for (int i = left; i < right; i++) {
+                if (arrayNew[i] > arrayNew[i + 1]) {
                     int t = arrayNew[i];
-                    arrayNew[i] = arrayNew[i+1];
-                    arrayNew[i+1] = t;
+                    arrayNew[i] = arrayNew[i + 1];
+                    arrayNew[i + 1] = t;
                     flag = 1;
                 }
             }
             right--;
-            for (int i = right; i > left; i--)
-            {
-                if (arrayNew[i-1] > arrayNew[i])
-                {
+            for (int i = right; i > left; i--) {
+                if (arrayNew[i - 1] > arrayNew[i]) {
                     int t = arrayNew[i];
-                    arrayNew[i] = arrayNew[i-1];
-                    arrayNew[i-1] = t;
+                    arrayNew[i] = arrayNew[i - 1];
+                    arrayNew[i - 1] = t;
                     flag = 1;
                 }
             }
             left++;
         }
-        System.out.println("\n" + "Каким стал массив после сортировки: ");
-        for (int i = 0; i < arrayNew.length; i++) {
-        }
-        System.out.println(Arrays.toString(arrayNew));
-        System.out.println("\n");
+        return arrayNew;
     }
 }

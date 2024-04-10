@@ -36,5 +36,5 @@
 
 3. Задача 3 - not related to tests
 4. Задача 4 
-   - 4.1 SortUtils
-   - 4.2 SortsMain
+   - 4.1 тест SortUtilsTest
+   - 4.2 тест SortUtilsTest
