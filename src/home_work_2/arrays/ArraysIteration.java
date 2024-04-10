@@ -5,71 +5,76 @@ import home_work_2.utils.ArraysUtils;
 public class ArraysIteration {
     public static void main(String[] args) {
         int[] array = ArraysUtils.arrayFromConsole();
-        outputToConsole(array);
-        outputEverySecondElement(array);
-        outputReversed(array);
+        System.out.println("Output of array elements using 'do-while','while', 'for' and 'for-each'");
+        System.out.println(outputToConsole(array));
+
+        System.out.println("Output of every second element using 'do-while', ");
+        System.out.println(outputEverySecondElement(array));
+
+        System.out.println("Reversed output using 'do while', 'while', 'for' and 'for-each'");
+        System.out.println(outputReversed(array));
     }
-    static void outputToConsole(int[] array){
+    public static String outputToConsole(int[] array){
         int i = 0;
-        System.out.println("Output of array elements using 'do-while'");
+        String str = "";
 
         do {
-            System.out.print(array[i] + " ");
+            str += array[i] + " ";
             i++;
         } while (i < array.length);
+        str += "\n";
 
-        System.out.println("\n" + "Output of array elements using 'while'");
         i = 0;
         while (i < array.length){
-            System.out.print(array[i] + " ");
+            str += array[i] + " ";
             i++;
         }
-
-        System.out.println("\n" + "Output of array elements using 'for'");
+        str += "\n";
         for (int j = 0; j < array.length; j++) {
-            System.out.print(array[j] + " ");
+            str += array[j] + " ";
         }
-
-        System.out.println("\n" + "Output of array elements using 'for-each'");
+        str += "\n";
         for (int k: array) {
-            System.out.print(k + " ");
+            str += k + " ";
         }
-        System.out.println("\n");
+        return str;
     }
 
-    static void outputEverySecondElement(int[] array){
+    public static String outputEverySecondElement(int[] array){
         int i = 1;
-        System.out.println("Output of every second element using 'do-while'");
+        String str2 = "";
+
         do {
-            System.out.print(array[i] + " ");
+            str2 += array[i] + " ";
             i += 2;
         } while (i < array.length);
+        str2 += "\n";
 
-        System.out.println("\n" + "Output of every second element using 'while'");
         i = 1;
         while (i < array.length){
-            System.out.print(array[i] + " ");
+            str2 += array[i] + " ";
             i += 2;
         }
+        str2 += "\n";
 
-        System.out.println("\n" + "Output of every second element using 'for'");
         for (int j = 1; j < array.length; j+=2) {
-            System.out.print(array[j] + " ");
+            str2 += array[j] + " ";
         }
+        str2 += "\n";
 
-        System.out.println("\n" + "Output of every second element using 'for-each'");
         int j = 2;
         for (int k: array) {
             if (j % 2 != 0) {
-                System.out.print(k + " ");
+                str2 += k + " ";
             }
             j++ ;
         }
-
-        System.out.println("\n");
+        return str2;
     }
-    static void outputReversed(int[] array){
-        System.out.println("Reversed output using 'do while'");
+
+    public static String outputReversed(int[] array){
+        String str3 = "";
+
         int[] arrayRev;
         arrayRev = new int[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -85,11 +90,11 @@ public class ArraysIteration {
 
         j = 0;
         do {
-            System.out.print(arrayRev[j] + " ");
+            str3 += arrayRev[j] + " ";
             j++;
         } while (j < arrayRev.length);
+        str3 += "\n";
 
-        System.out.println("\n" + "Reversed output using 'while'");
         int[] arrayRev3;
         arrayRev3 = new int[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -105,11 +110,11 @@ public class ArraysIteration {
         }
         c = 0;
         while (c < arrayRev3.length){
-            System.out.print(arrayRev3[c] + " ");
+            str3 += arrayRev3[c] + " ";
             c++;
         }
+        str3 += "\n";
 
-        System.out.println("\n" + "Reversed output using 'for'");
         int[] arrayRev2;
         arrayRev2 = new int[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -122,10 +127,10 @@ public class ArraysIteration {
             arrayRev2[arrayRev2.length - i - 1] = temp;
         }
         for (int i = 0; i < arrayRev2.length; i++) {
-            System.out.print(arrayRev2[i] + " ");
+            str3 += arrayRev2[i] + " ";
         }
+        str3 += "\n";
 
-        System.out.println("\n" + "Reversed output using 'for-each'");
         int[] arrayRev4;
         arrayRev4 = new int[array.length];
         for (int i = 0; i < array.length; i++) {
@@ -135,6 +140,7 @@ public class ArraysIteration {
         for (int i : arrayRev4){
             reverse = Integer.toString(i) + " " + reverse;
         }
-        System.out.println(reverse);
+        str3 += reverse;
+        return str3;
     }
 }

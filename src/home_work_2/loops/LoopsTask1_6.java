@@ -7,7 +7,7 @@ public class LoopsTask1_6 {
         printRow(6,9);
     }
 
-    static void printRow(int from, int to){
+    public static void printRow(int from, int to){
         for (int i = 1; i <= 10; i++) {
             for (int j = from; j <= to ; j++) {
                 System.out.print(j + " x " + i + " = " + i * j + "\t  " + "| ");
@@ -17,7 +17,7 @@ public class LoopsTask1_6 {
 
     }
 
-    static void printLine(){
+    public static void printLine(){
         int count = 0;
 
         while (count <= 58) {

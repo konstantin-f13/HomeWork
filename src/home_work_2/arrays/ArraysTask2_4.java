@@ -2,88 +2,91 @@ package home_work_2.arrays;
 
 import home_work_2.utils.ArraysUtils;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class ArraysTask2_4 {
     public static void main(String[] args) {
-        int[] array = ArraysUtils.arrayRandom(50,100);
+        int[] array = ArraysUtils.arrayRandom(50, 100);
+        System.out.println(Arrays.toString(array));
+        int[] newArray = randomizerNegPos(array);
+        System.out.println(Arrays.toString(newArray));
 
-        sumEvenPositiveElements(array);
+        System.out.println(sumEvenPositiveElements(newArray));
 
+        System.out.println("Полученное значение макс. элемента с чётным индексом");
         System.out.println(maxElWithEvenArrayIndex(array) + "\n");
 
-        elemLessThanAverage(array);
+        System.out.println("Elements less than the average value");
+        System.out.println(elemLessThanAverage(array));
 
-        twoMinElements(array);
+        System.out.println(twoMinElements(array));
 
-        arrayCompressionByDeletionOfElements(array, 10, 50);//параметры a и b - диапазон данных, подлежащих удалению
+        System.out.println(arrayCompressionByDeletionOfElements(array, 10, 50));//параметры a и b - диапазон данных, подлежащих удалению
 
-        sumOfDigitsOfTheWholeArray(array);
+        System.out.println("\nСумма цифр всех элементов массива = " + sumOfDigitsOfTheWholeArray(array));
+
     }
-    static void sumEvenPositiveElements(int[] array){
+
+    public static int[] randomizerNegPos(int[] array){
         Random random = new Random();
         int[] arrayNew;
         arrayNew = new int[array.length];
-        System.out.println("Сгенерированные элементы:");
         for (int i = 0; i < array.length; i++) {
             arrayNew[i] = array[i] * (random.nextBoolean() ? -1 : 1);// По условию задачи сказано, что массив должен
             // содержать как положительные, так и отрицательные числа.
             // Поэтому добавляем умножение на "(random.nextBoolean() ? -1 : 1)"
-            System.out.print(arrayNew[i] + " ");
         }
-        System.out.println("\n" + "Чётные положительные элементы:");
-
-        int sum = 0;
-        for (int i = 0; i < arrayNew.length; i++) {
-            if ((arrayNew[i] > 0) && (arrayNew[i] % 2 == 0)){
-                System.out.print(arrayNew[i] + " ");
-                sum += arrayNew[i];
-            }
-        }
-        System.out.println("\n" + "Сумма чётных положительных элементов= " + sum + "\n");
+        return arrayNew;
     }
 
-    static int maxElWithEvenArrayIndex(int[] array){
-        System.out.println("Сгенерированные элементы:");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
-        }
+    public static String sumEvenPositiveElements(int[] array) {
 
+        String str = "";
+        str += "Чётные положительные элементы:";
+
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            if ((array[i] > 0) && (array[i] % 2 == 0)) {
+                str += array[i] + " ";
+                sum += array[i];
+            }
+        }
+        str += "\n" + "Сумма чётных положительных элементов= " + sum + "\n";
+        return str;
+
+    }
+
+    public static int maxElWithEvenArrayIndex(int[] array) {
         int max = 0;
         for (int i = max + 2; i < array.length; i += 2) {
-            if (array[max] < array[i]){
+            if (array[max] < array[i]) {
                 max = i;
             }
         }
-        System.out.println("\n"+ "Полученное значение макс. элемента с чётным индексом");
         return array[max];
-
     }
 
-    static void elemLessThanAverage(int[] array){
+    public static String elemLessThanAverage(int[] array) {
+        String str = "";
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum += array[i];
         }
-        System.out.println("sum=" + sum);
 
         float average = sum / array.length;
-        System.out.println("average=" + average);
-        System.out.println("Elements less than the average value");
+
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] < average) {
-                System.out.print(array[i] + " ");
+                str += array[i] + " ";
             }
         }
-        System.out.println("\n");
+        return str;
     }
 
-    static void twoMinElements(int[] array){
-        System.out.println("Generated array:");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ");
-        }
+    public static String twoMinElements(int[] array) {
+        String str = "";
 
         int minInd1, minInd2;
         minInd1 = 0;
@@ -95,30 +98,30 @@ public class ArraysTask2_4 {
         }
 
         for (int i = 2; i < array.length; i++) {
-            if (array[i] <= array[minInd1]){
-                if (array[minInd1] <= array[minInd2]){
+            if (array[i] <= array[minInd1]) {
+                if (array[minInd1] <= array[minInd2]) {
                     minInd2 = i;
-                } else if (array[minInd1] > array[minInd2]){
+                } else if (array[minInd1] > array[minInd2]) {
                     minInd1 = i;
                 }
-            } else if (array[i] <= array[minInd2]){
+            } else if (array[i] <= array[minInd2]) {
                 minInd2 = i;
             }
         }
-        System.out.println("\nTwo found minimal elements are: \n" + array[minInd1] + " and " + array[minInd2] + "\n");
+        str += "\nTwo found minimal elements are: \n" + array[minInd1] + " and " + array[minInd2] + "\n";
+        return str;
     }
 
-    static void arrayCompressionByDeletionOfElements(int[] array, int a, int b){
+    public static String arrayCompressionByDeletionOfElements(int[] array, int a, int b) {
+        String str = "";
         int[] arrayNew;
         arrayNew = new int[array.length];
-        System.out.println("Generated elements:");
         for (int i = 0; i < array.length; i++) {
             arrayNew[i] = array[i];
-            System.out.print(arrayNew[i] + " ");
         }
 
         for (int i = 0; i < arrayNew.length; i++) {
-            if((arrayNew[i] >= a) && (arrayNew[i] <= b)) {
+            if ((arrayNew[i] >= a) && (arrayNew[i] <= b)) {
 
                 for (int j = i; j < arrayNew.length - 1; j++) {//цикл по сдвигу всех оставшихся элементов,
                     // кроме самого правого на 1 позицию влево
@@ -128,13 +131,14 @@ public class ArraysTask2_4 {
                 i--;//возврат на предыдущую итерацию для проверки нового значения
             }
         }
-        System.out.println("\n" + "Compressed array:");
+        str += "Compressed array:";
         for (int i = 0; i < arrayNew.length; i++) {
-            System.out.print(arrayNew[i] + " ");
+            str += arrayNew[i] + " ";
         }
+        return str;
     }
 
-    static void sumOfDigitsOfTheWholeArray(int[] array){
+    public static int sumOfDigitsOfTheWholeArray(int[] array) {
         int sum = 0;
 
         for (int i = 0; i < array.length; i++) {
@@ -144,6 +148,6 @@ public class ArraysTask2_4 {
                 num /= 10;
             }
         }
-        System.out.println("\n\nСумма цифр всех элементов массива = " + sum);
+        return sum;
     }
 }

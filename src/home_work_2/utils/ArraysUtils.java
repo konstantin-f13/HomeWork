@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class ArraysUtils {
+
     public static int[] arrayFromConsole(){
         Scanner console = new Scanner(System.in);
         System.out.println("Введите размер массива:");
