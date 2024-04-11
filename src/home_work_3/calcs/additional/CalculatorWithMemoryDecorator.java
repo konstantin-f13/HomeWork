@@ -6,6 +6,10 @@ public class CalculatorWithMemoryDecorator implements ICalculator {
     private ICalculator calc;
     double temp, savedValue;
 
+    public CalculatorWithMemoryDecorator(ICalculator calc) {
+        this.calc = calc;
+    }
+
     public ICalculator getCalculator() {
         return calc;
     }
@@ -17,10 +21,6 @@ public class CalculatorWithMemoryDecorator implements ICalculator {
         double tempValue = savedValue;
         savedValue = 0;
         return tempValue;
-    }
-
-    public CalculatorWithMemoryDecorator(ICalculator calc) {
-        this.calc = calc;
     }
 
     public double divisionMethod(double firstNum, double secondNum){

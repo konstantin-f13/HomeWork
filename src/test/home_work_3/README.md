@@ -36,7 +36,7 @@
    - 9.7 класс CalculatorWithCounterDelegateChoiceAggregationMain - skipped
    
 10. Задача 10
-   - Интерфейс ICalculator
+   - Интерфейс ICalculator - skipped
 
 11. Задача 11
    - 11.1-11.6 класс CalculatorWithCounterAutoAggregationInterface - skipped
@@ -47,8 +47,8 @@
     - 12.8 класс CalculatorWithMemoryMain - тест CalculatorWithMemoryTest
 
 13. Задача 13*
-    - 13.1-13.4 классы  CalculatorWithCounterAutoDecorator, CalculatorWithMemoryDecorator - skipped
-    - 13.5-13.6 класс CalculatorDecoratorMain - skipped
-    - 13.7** класс CalculatorDecoratorMain - skipped
+    - 13.1-13.4 классы  CalculatorWithCounterAutoDecorator, CalculatorWithMemoryDecorator - тест CalculatorDecoratorMainTest
+    - 13.5-13.6 класс CalculatorDecoratorMain - тест CalculatorDecoratorMainTest
+    - 13.7** класс CalculatorDecoratorMain - тест CalculatorDecoratorMainTest
 
 14. Задача 14* not done yet
