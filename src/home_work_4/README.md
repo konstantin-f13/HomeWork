@@ -10,7 +10,11 @@
 
 **Задача 12**: статический метод sort(DataContainer<T> container, Comparator<T> comparator) в классе DataContainer.
 
-Основной класс - класс DataContainer.Runner - класс Main, содержит комменты с примерами из задания. Utils классы - класс ArraySorting в папке utils, содержит методы сортировки массивов для заданий 9, 11 и 12.
+Основной класс - класс DataContainer.
+
+Runner - класс DataContainerMain, содержит комменты с примерами из задания. 
+
+Utils классы - класс ArraySorting в папке utils, содержит методы сортировки массивов для заданий 9, 11 и 12.
 
 
 

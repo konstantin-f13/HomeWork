@@ -1,16 +1,11 @@
 # Тесты для задач из home_work_4
 
-**Задачи 1 - 8**: класс DataContainer и runner Main.    
+**Задачи 1 - 8**: тест DataContainerTest 
 
-**Задача 9**: метод public void sort(Comparator<T> comparator) в классе DataContainer с реализацией метода в классе ArraySorting. Вспомогательные Comparators: ComparatorIntegerBySize, ComparatorStringByLength.
+**Задача 9**: тест DataContainerTest
 
-**Задача 10**: метод toString() в классе DataContainer.
+**Задача 10**: тест DataContainerTest
 
-**Задача 11**: статический метод sort(DataContainer<T> container) в классе DataContainer.
+**Задача 11**: тест DataContainerTest
 
-**Задача 12**: статический метод sort(DataContainer<T> container, Comparator<T> comparator) в классе DataContainer.
-
-Основной класс - класс DataContainer.Runner - класс Main, содержит комменты с примерами из задания. Utils классы - класс ArraySorting в папке utils, содержит методы сортировки массивов для заданий 9, 11 и 12.
-
-
-
+**Задача 12**: тест DataContainerTest
