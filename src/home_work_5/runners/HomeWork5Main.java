@@ -1,12 +1,9 @@
-package home_work_5;
+package home_work_5.runners;
 
 import home_work_5.comparators.ComparatorPassLengthThenNickAlphOrder;
 import home_work_5.comparators.ComparatorPasswordByLength;
-import home_work_5.dto.Animal;
 import home_work_5.dto.Person;
 import home_work_5.utils.RandomGeneratorsUtils;
-import home_work_5.utils.RealNameOfAnimalGenerator;
-import home_work_5.utils.RealNameOfPeopleGenerator;
 
 import java.util.*;
 
