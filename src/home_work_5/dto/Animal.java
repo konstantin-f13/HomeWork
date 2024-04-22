@@ -2,7 +2,9 @@ package home_work_5.dto;
 
 import home_work_5.utils.RandomGeneratorsUtils;
 
-public class Animal {
+import java.util.Objects;
+
+public class Animal implements Comparable<Animal> {
     private int age;
     private String nick;
 
@@ -33,5 +35,27 @@ public class Animal {
 
     public String getNick() {
         return nick;
+    }
+
+    @Override
+    public int compareTo(Animal o) {
+        int ageComparison = Integer.compare(this.age, o.age);
+        if (ageComparison == 0) {
+            return this.nick.compareTo(o.nick);
+        }
+        return ageComparison;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Animal)) return false;
+        Animal animal = (Animal) o;
+        return age == animal.age && Objects.equals(nick, animal.nick);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(age, nick);
     }
 }
