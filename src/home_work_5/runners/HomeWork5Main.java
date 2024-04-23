@@ -99,7 +99,7 @@ public class HomeWork5Main {
         arrayListPeople.sort(new ComparatorPassLengthThenNickAlphOrder());
 
 /**
- * Кладём сеты в списки типа ArrayList для последующей сортировки с использованием наших компараторов.
+ * Кладём сеты hashSetPeople и treeSetPeople в списки типа ArrayList для последующей сортировки с использованием наших компараторов.
  */
         List<Person> sortedList1 = new ArrayList<>(hashSetPeople);
         Collections.sort(sortedList1, new ComparatorPasswordByLength());
@@ -157,7 +157,7 @@ public class HomeWork5Main {
         System.out.println("Операция итерирования ArrayList arrayListPeople через fori заняла "  + (stop - start) + "мс");
 
         /**
-         * цикл fori для итерации HashSet и TreeSet не имеет смысла , т.к. в таких сетах отсутствует порядок по индексу.
+         * цикл fori для итерации HashSet и TreeSet не имеет смысла, т.к. в таких сетах отсутствует порядок по индексу.
          */
 
         iterator1 = linkedListPeople.iterator();
