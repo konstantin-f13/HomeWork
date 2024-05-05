@@ -9,28 +9,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class Task2_2 {
-    public static String identifyMostCommonWords(File file, int popularity) {
-
-        String result = "";
-
-        try {
-            FileReader reader = new FileReader(file);
-            StringBuilder builder = new StringBuilder();
-
-            int ch;
-            while ((ch = reader.read()) != -1) {
-                builder.append((char) ch);
-            }
-            result = builder.toString();
-        } catch (FileNotFoundException e) {
-            System.out.println("Не найден файл");
-        } catch (IOException e) {
-            System.out.println("Ошибка чтения файла");
-        }
-
-
-        String[] words = result.split("[\\s\\p{Punct}&&[^-]]+|\\d+|(?<!\\S)--(?!\\S)");
-
+    public static String identifyMostCommonWords(String[] words, int popularity) {
         Map<String, Integer> wordFrequency = new HashMap<>();
 
         for (String word : words) {

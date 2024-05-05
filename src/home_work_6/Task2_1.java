@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 public class Task2_1 {
-    public static int uniqueWordsInBookCount(File file) {
+
+    public static String[] stringSplitter(File file) {
 
         String result = "";
 
@@ -31,7 +32,11 @@ public class Task2_1 {
 
 
         String[] words = result.split("[\\s\\p{Punct}&&[^-]]+|\\d+|(?<!\\S)--(?!\\S)");
+        return words;
+    }
 
+
+    public static int uniqueWordsInBookCount(String[] words) {
         ArrayList<String> usedWords = new ArrayList<String>();
         for (String word : words) {
             if (!word.isEmpty()) {
