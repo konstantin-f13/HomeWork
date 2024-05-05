@@ -9,7 +9,7 @@ import java.util.HashSet;
 
 public class Task2_1 {
 
-    public static String[] stringSplitter(File file) {
+    public static String stringBuilderFromFile(File file) {
 
         String result = "";
 
@@ -30,9 +30,13 @@ public class Task2_1 {
             System.out.println("Ошибка чтения файла");
         }
 
+        return result;
+    }
 
+    public static String[] stringSplitter(String result){
         String[] words = result.split("[\\s\\p{Punct}&&[^-]]+|\\d+|(?<!\\S)--(?!\\S)");
         return words;
+
     }
 
 
