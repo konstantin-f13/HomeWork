@@ -1,8 +1,6 @@
 package home_work_6.runners;
 
-import home_work_6.EasySearch;
-import home_work_6.Task2_1;
-import home_work_6.Task2_2;
+import home_work_6.*;
 
 import java.io.File;
 
@@ -18,6 +16,30 @@ public class HomeWork6Main {
         System.out.println("200 самых часто встречающихся слов в книге: " + Task2_2.identifyMostCommonWords(Task2_1.stringSplitter(Task2_1.stringBuilderFromFile(file)), 200));
         System.out.println("1000 самых часто встречающихся слов в книге: " + Task2_2.identifyMostCommonWords(Task2_1.stringSplitter(Task2_1.stringBuilderFromFile(file)), 1000));
 
+        System.out.println("_______Класс EasySearch_______");
         System.out.println("Слово \"Марью\" встречается в файле " + new EasySearch().search(Task2_1.stringBuilderFromFile(file), "Марью") + " раз");
+        System.out.println("Слово \"война\" встречается в файле " + new EasySearch().search(Task2_1.stringBuilderFromFile(file), "война") + " раз");
+        System.out.println("Слово \"и\" встречается в файле " + new EasySearch().search(Task2_1.stringBuilderFromFile(file), " и ") + " раз");
+        System.out.println("Слово \"мир\" встречается в файле " + new EasySearch().search(Task2_1.stringBuilderFromFile(file), "мир") + " раз");
+
+        System.out.println("_______Класс RegExSearch_______");
+        System.out.println("Слово \"Марью\" встречается в файле " + new RegExSearch().search(Task2_1.stringBuilderFromFile(file),"Марью") + " раз");
+        System.out.println("Слово \"война\" встречается в файле " + new RegExSearch().search(Task2_1.stringBuilderFromFile(file),"война") + " раз");
+        System.out.println("Слово \"и\" встречается в файле " + new RegExSearch().search(Task2_1.stringBuilderFromFile(file),"и") + " раз");
+        System.out.println("Слово \"мир\" встречается в файле " + new RegExSearch().search(Task2_1.stringBuilderFromFile(file),"мир") + " раз");
+
+        System.out.println("_______Класс SearchEnginePunctuationNormalizer_______");
+        System.out.println("Слово \"Марью\" встречается в файле " + new SearchEnginePunctuationNormalizer(new RegExSearch()).search(Task2_1.stringBuilderFromFile(file),"Марью") + " раз");
+        System.out.println("Слово \"война\" встречается в файле " + new SearchEnginePunctuationNormalizer(new RegExSearch()).search(Task2_1.stringBuilderFromFile(file),"война") + " раз");
+        System.out.println("Слово \"и\" встречается в файле " + new SearchEnginePunctuationNormalizer(new RegExSearch()).search(Task2_1.stringBuilderFromFile(file),"и") + " раз");
+        System.out.println("Слово \"мир\" встречается в файле " + new SearchEnginePunctuationNormalizer(new RegExSearch()).search(Task2_1.stringBuilderFromFile(file),"мир") + " раз");
+
+        System.out.println("_______Класс CaseInsensitiveDecorator");
+        System.out.println("Слово \"Марью\" встречается в файле " + new CaseInsensitiveDecorator(new RegExSearch()).search(Task2_1.stringBuilderFromFile(file),"Марью") + " раз");
+        System.out.println("Слово \"война\" встречается в файле " + new CaseInsensitiveDecorator(new RegExSearch()).search(Task2_1.stringBuilderFromFile(file),"война") + " раз");
+        System.out.println("Слово \"и\" встречается в файле " + new CaseInsensitiveDecorator(new RegExSearch()).search(Task2_1.stringBuilderFromFile(file),"и") + " раз");
+        System.out.println("Слово \"мир\" встречается в файле " + new CaseInsensitiveDecorator(new RegExSearch()).search(Task2_1.stringBuilderFromFile(file),"мир") + " раз");
+
+
     }
 }
