@@ -14,7 +14,7 @@
 
 **Задача 6**: см. пакет test  
 
-**Задача 7**: not done yet - класс HW6Task7Main 
+**Задача 7**: класс HW6Task7Main 
 
 
 

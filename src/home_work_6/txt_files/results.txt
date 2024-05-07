@@ -1,0 +1,6 @@
+split_99.txt - она - 37
+split_99.txt - оно - 1
+split_99.txt - он - 25
+split_99.txt - мир - 0
+split_99.txt - т - 3
+split_99.txt - ъ - 0
