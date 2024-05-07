@@ -12,6 +12,10 @@
 **Задача 5.1**: класс HomeWork6Main  
 **Задача 5.2***: класс HomeWork6Main
 
+**Задача 6**: см. пакет test  
+
+**Задача 7**: not done yet - класс HW6Task7Main 
+
 
 
 
