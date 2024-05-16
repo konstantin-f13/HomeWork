@@ -1,0 +1,7 @@
+split_98.txt - Россия - 0
+split_98.txt - оно - 0
+split_98.txt - он - 80
+split_98.txt - она - 0
+split_98.txt - в - 66
+split_98.txt - к - 19
+split_98.txt - а - 12

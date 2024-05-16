@@ -1,7 +1,7 @@
 package home_work_6.runners;
 
-import home_work_6.CaseInsensitiveDecorator;
-import home_work_6.RegExSearch;
+import home_work_6.search.decorators.CaseInsensitiveDecorator;
+import home_work_6.search.RegExSearch;
 import home_work_6.Task2_1;
 
 import java.io.File;
@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class HW6Task7Main {
     public static void main(String[] args) {
 
-        String folderPath = "HomeWork\\src\\home_work_6\\txt_files\\";
+        String folderPath = "HomeWork/src/home_work_6/txt_books/many_txt_files";
         File folder = new File(folderPath);
         StringBuilder resultRecorder = new StringBuilder();
 
@@ -91,7 +91,7 @@ public class HW6Task7Main {
                 return "exit";
             }
 
-            File selectedFilePath = new File(folderPath + "\\" + userChoice);
+            File selectedFilePath = new File(folderPath + "/" + userChoice);
             if (selectedFilePath.exists() && selectedFilePath.isFile()) {
                 break;
             } else {

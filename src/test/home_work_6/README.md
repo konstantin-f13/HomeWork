@@ -6,3 +6,5 @@
 2. RegExSearchTest - тестируем реализацию в классе RegExSearch (зад. 4.2).
 3. SEPunctuationNormalizerTest - тестируем реализацию в декораторе SEPunctuationNormalizer (зад. 4.3).
 4. CaseInsensitiveDecoratorTest - тестируем реализацию в декораторе CaseInsensitiveDecorator (зад. 4.4).
+
+5. StringSplitterTest - тесты метода stringSplitter (зад. 2.1).  

@@ -1,6 +1,6 @@
-package home_work_6;
+package home_work_6.search.decorators;
 
-import home_work_6.api.ISearchEngine;
+import home_work_6.search.api.ISearchEngine;
 
 public class CaseInsensitiveDecorator implements ISearchEngine {
     private ISearchEngine searchEngine;

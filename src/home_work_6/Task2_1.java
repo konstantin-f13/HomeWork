@@ -47,9 +47,6 @@ public class Task2_1 {
                 usedWords.add(word);
             }
         }
-
-//        System.out.println("Количество всех найденных слов с учетом повторных: " + usedWords.size());
-
         HashSet<String> uniqueWords = new HashSet<String>(usedWords);
         return uniqueWords.size();
 
