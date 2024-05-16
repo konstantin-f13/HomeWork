@@ -34,9 +34,8 @@ public class Task2_1 {
     }
 
     public static String[] stringSplitter(String result){
-        String[] words = result.split("[\\s\\p{Punct}&&[^-]]+|\\d+|(?<!\\S)--(?!\\S)");
+        String[] words = result.split("[\\s\\p{Punct}&&[^-]]+|(?<!\\S)--(?!\\S)");
         return words;
-
     }
 
 
