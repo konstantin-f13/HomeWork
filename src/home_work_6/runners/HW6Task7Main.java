@@ -30,7 +30,7 @@ public class HW6Task7Main {
                 }
 
             } else {
-                System.out.println("Введите слово для поиска (или 'exit' для выхода, 'back' для возврата к выбору файла):");
+                System.out.println("Введите слово для поиска в выбранном файле (или 'exit' для выхода, 'back' для возврата к выбору файла):");
                 searchedWord = console.nextLine();
 
                 if (searchedWord.equalsIgnoreCase("exit")) {
@@ -55,7 +55,7 @@ public class HW6Task7Main {
             File[] files = folder.listFiles();
 
             if (files != null) {
-                System.out.println("Список файлов формата txt в папке:");
+                System.out.println("Список файлов формата txt в папке: " + folder);
 
                 boolean newLine = false;
 
@@ -103,7 +103,7 @@ public class HW6Task7Main {
 
     public static void searchInFile(File folderPath, String selectedFileName, String searchedWord, StringBuilder
             resultRecorder) {
-        File file = new File(folderPath + "\\" + selectedFileName);
+        File file = new File(folderPath + "/" + selectedFileName);
         long count = new CaseInsensitiveDecorator(new RegExSearch()).search(Task2_1.stringBuilderFromFile(file), searchedWord);
         resultRecorder.append(selectedFileName).append(" - ").append(searchedWord).append(" - ").append(count).append("\n");
         System.out.println("Слово '" + searchedWord + "' найдено в файле '" + selectedFileName + "' " + count + " раз(а).");
@@ -111,7 +111,7 @@ public class HW6Task7Main {
 
     public static void recordingResultsIntoFile(File folderPath, StringBuilder resultRecorder, String
             desiredFileName) {
-        String resultFileName = folderPath + "\\" + desiredFileName;
+        String resultFileName = folderPath + File.separator + "result_folder" + File.separator + desiredFileName;
         try (FileWriter writer = new FileWriter(resultFileName)) {
             writer.write(resultRecorder.toString());
             System.out.println("Результаты поиска сохранены в файле '" + resultFileName + "'.");

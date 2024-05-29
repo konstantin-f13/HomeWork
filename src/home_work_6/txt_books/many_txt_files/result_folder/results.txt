@@ -1,0 +1,17 @@
+split_56.txt - я - 66
+split_56.txt - он - 56
+split_56.txt - они - 9
+split_56.txt - бы - 13
+split_56.txt - б - 0
+split_56.txt - к - 14
+split_56.txt - и - 128
+split_56.txt - или - 2
+split_56.txt - Москва - 0
+split_29.txt - он - 47
+split_29.txt - она - 3
+split_29.txt - они - 3
+split_29.txt - к - 21
+split_29.txt - бы - 10
+split_29.txt - если - 0
+split_29.txt - почему - 0
+split_29.txt - еще - 7
