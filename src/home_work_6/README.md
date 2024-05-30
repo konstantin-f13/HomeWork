@@ -14,7 +14,7 @@
 
 **Задача 6**: см. пакет test  
 
-**Задача 7**: класс HW6Task7Main в папке runners
+**Задача 7**: класс HW6Task7Main в папке runners  
 **Задача 8**: класс HW6Task8_Threads в папке runners
 
 
